@@ -1,0 +1,7 @@
+{
+  "name": "SwiftShop",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
