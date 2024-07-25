@@ -1,0 +1,107 @@
+.container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+
+    .interTitles {
+        color: black;
+    }
+
+    .welkomeMess {
+        grid-column: span 2;
+
+        h1 {
+            padding-top: 1rem;
+            color: black;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+
+            .logoColor {
+                color: #3880ff;
+            }
+        }
+
+        .welkomParagraph {
+            font-size: 1rem;
+            font-weight: normal;
+            color: black;
+            text-align: center;
+        }
+    }
+
+    .currentOffers {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: span 2;
+
+        color: black;
+        border-radius: 1rem;
+        background-color: rgba(44, 42, 42, 0.866);
+        width: 90%;
+        height: 70%;
+        margin: auto;
+        padding: 2rem;
+
+        background-image: url('../../assets/CurrentOffersImg.jpg');
+        background-size: cover;
+        background-position: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(79, 76, 76, 0.5);
+            border-radius: 1rem;
+            z-index: 1;
+        }
+
+        .offersTxt,
+        .offers {
+            position: relative;
+            z-index: 2;
+        }
+
+        .offersTxt {
+            ul {
+                list-style-type: none;
+            }
+        }
+
+        .offers {
+            img {
+                height: 50vh;
+                border-radius: 1.5rem;
+            }
+        }
+    }
+
+    .promiseList {
+        color: black;
+
+        ul {
+            list-style-type: none;
+        }
+    }
+
+
+
+    .productCategories {
+        color: black;
+
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    .shopMess {
+        color: black;
+        grid-column: span 2;
+
+    }
+}
