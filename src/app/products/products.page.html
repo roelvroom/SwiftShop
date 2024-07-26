@@ -15,6 +15,12 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">iets Products</strong>
+    <div class="products-container">
+      <div *ngFor="let product of products" class="product-card">
+        <img [src]="product.image" alt="Product image">
+        <h3>{{ product.title }}</h3>
+        <p>${{ product.price }}</p>
+      </div>
+    </div>
   </div>
 </ion-content>
