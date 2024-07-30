@@ -30,7 +30,9 @@
       <img [src]="product.image" alt="{{product.title}}" class="product-image">
       <h3 class="product-title">{{product.title}}</h3>
       <p class="product-price">€{{product.price}}</p>
-      <button type="button">Toevoegen aan winkelwagen</button>
+      <button (click)="addToCart(product)">Toevoegen aan winkelwagen</button>
+      <button (click)="addToLiked(product)">Like</button>
+      <button (click)="navigateToProductDetail(product)">Details</button>
     </div>
   </div>
 </ion-content>

@@ -15,6 +15,16 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">iets Detail</strong>
+    <!-- Toon productdetails -->
+    <div *ngIf="product">
+      <img [src]="product.image" alt="Product afbeelding">
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.description }}</p>
+      <p>Prijs: {{ product.price | currency }}</p>
+      <!-- Voeg meer velden toe zoals nodig -->
+    </div>
+    <div *ngIf="!product">
+      <strong>Geen productgegevens gevonden.</strong>
+    </div>
   </div>
 </ion-content>

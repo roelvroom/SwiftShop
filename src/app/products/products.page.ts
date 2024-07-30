@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductManagementService } from '../product-management-service.service';
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -7,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsPage implements OnInit {
   products: any[] = [];
-  filteredProducts: any[] = []; // Voeg deze regel toe
-  searchTerm: string = ''; // Voeg deze regel toe
+  filteredProducts: any[] = []; 
+  searchTerm: string = '';
 
-  constructor() { }
+  constructor(private router: Router, private productService: ProductManagementService) { }
 
   ngOnInit() {
     this.fetchProducts();
@@ -21,7 +23,7 @@ export class ProductsPage implements OnInit {
       .then(res => res.json())
       .then(json => {
         this.products = json;
-        this.filteredProducts = json; // Update deze regel
+        this.filteredProducts = json;
         console.log(json);
       })
       .catch(error => console.error('Error fetching products:', error));
@@ -35,5 +37,24 @@ export class ProductsPage implements OnInit {
         product.title.toLowerCase().includes(this.searchTerm.toLowerCase())
       );
     }
+  }
+
+  addToCart(product: any) {
+    this.productService.addToCart(product);
+    console.log('Product added to cart:', product);
+  }
+  
+  addToLiked(product: any) {
+    this.productService.addToLiked(product);
+    console.log('Product added to liked:', product);
+  }
+
+  navigateToProductDetail(product: any) {
+    const navigationExtras: NavigationExtras = {
+      state: {
+        product: product
+      }
+    };
+    this.router.navigate(['/detail'], navigationExtras);
   }
 }

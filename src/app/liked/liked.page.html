@@ -15,6 +15,11 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">iets Liked</strong>
+    <div *ngFor="let product of likedProducts" class="product-card">
+      <img [src]="product.image" alt="{{product.title}}" class="product-image">
+      <h3 class="product-title">{{product.title}}</h3>
+      <p class="product-price">€{{product.price}}</p>
+      <!-- <button (click)="removeFromLiked(product)">Unlike</button> -->
+    </div>
   </div>
 </ion-content>
