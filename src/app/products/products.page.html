@@ -15,12 +15,22 @@
   </ion-header>
 
   <div id="container">
+    <input
+      type="text"
+      [(ngModel)]="searchTerm"
+      (input)="searchProducts()"
+      placeholder="Zoek producten"
+    />
+    <!-- Knop toevoegen om de zoekfunctie te activeren -->
+    <button (click)="searchProducts()">Zoek</button>
     <div class="products-container">
-      <div *ngFor="let product of products" class="product-card">
-        <img [src]="product.image" alt="Product image">
-        <h3>{{ product.title }}</h3>
-        <p>${{ product.price }}</p>
-      </div>
+      <!-- Verwijder de dubbele *ngFor loop voor 'products' -->
+    </div>
+    <div *ngFor="let product of filteredProducts" class="product-card">
+      <img [src]="product.image" alt="{{product.title}}" class="product-image">
+      <h3 class="product-title">{{product.title}}</h3>
+      <p class="product-price">€{{product.price}}</p>
+      <button type="button">Toevoegen aan winkelwagen</button>
     </div>
   </div>
 </ion-content>
