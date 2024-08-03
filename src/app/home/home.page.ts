@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductManagementService } from '../product-management-service.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  constructor(private productService: ProductManagementService) { }
 
   ngOnInit() {
   }

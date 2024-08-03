@@ -15,6 +15,14 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">iets Cart</strong>
+    <div *ngFor="let product of cartProducts" class="product-card">
+      <img [src]="product.image" alt="{{product.title}}" class="product-image">
+      <h3 class="product-title">{{product.title}}</h3>
+      <p class="product-price">€{{product.price}}</p>
+    </div>
+
+    <div class="total-price">
+      <h2>Totaal: €{{ getTotalPrice() }}</h2>
+    </div>
   </div>
 </ion-content>
