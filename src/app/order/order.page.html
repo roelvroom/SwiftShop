@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Order</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form #orderForm="ngForm" >
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text"  name="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Address</ion-label>
+        <ion-input type="text"  name="address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">City</ion-label>
+        <ion-input type="text"  name="city"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Postal Code</ion-label>
+        <ion-input type="text"  name="postalCode"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Country</ion-label>
+        <ion-input type="text"  name="country"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button type="submit" expand="block" (click)="FeedbackPage()">Place Order</ion-button>
+  </form>
+</ion-content>
