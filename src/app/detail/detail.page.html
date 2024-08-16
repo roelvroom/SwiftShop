@@ -14,7 +14,7 @@
       <h2>{{ product.title }}</h2>
       <p>{{ product.description }}</p>
       <p class="Price">Prijs: {{ product.price | currency }}</p>
-      <button fill="outline" (click)="addToCart(product)">Winkelwagen</button>
+      <button (click)="addToCart(product)">Winkelwagen</button>
     </div>
     <div *ngIf="!product">
       <strong>Geen productgegevens gevonden.</strong>

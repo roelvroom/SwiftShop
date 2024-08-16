@@ -179,6 +179,7 @@
     .shopMess {
         text-align: center;
         padding-bottom: 2rem;
+        margin: 2rem;
 
         h3 {
             color: black;
@@ -190,5 +191,11 @@
         span {
             color: #24B0BA;
         }
+
+        ion-icon {
+            color: #24B0BA;
+            font-size: 2rem;
+        }
     }
+    
 }

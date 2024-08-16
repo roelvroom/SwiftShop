@@ -4,6 +4,8 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        height: auto;
+
 
         ion-searchbar {
             --background: black;
@@ -48,7 +50,7 @@
         //     }
         // }
 
-        button{
+        button {
             border: #24B0BA solid 1px;
             background-color: transparent;
             padding: 0.6rem;

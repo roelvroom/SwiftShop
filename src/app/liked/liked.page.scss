@@ -2,6 +2,7 @@
     background: #FFF9F0;
     color: black;
     text-align: center;
+    padding: 2rem;
 
     .card {
         border: #24B0BA solid 1px;
@@ -34,6 +35,14 @@
 
     .Price {
         color: #24B0BA;
+    }
+
+    .cart-button{
+        background: #24B0BA;
+        padding: 0.6rem;
+        border-radius: 0.7rem;
+        color: white;
+        margin: auto;
     }
 
     .sticky-button{

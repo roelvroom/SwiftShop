@@ -1,0 +1,35 @@
+ion-content {
+    form {
+        ion-list {
+            margin-top: 3rem;
+        
+            ion-item {
+                --border-color: #24B0BA;
+                --border-style: solid;
+                --border-width: 1px;
+                --border-radius: 8px;
+                margin-bottom: 10px;
+                padding: 0.8rem;
+                width: 80%;
+                margin: auto;
+            
+                ion-label {
+                    color: white;
+                }
+            
+                ion-input {
+                    --placeholder-color: #24B0BA;
+                    --color: white;
+                }
+            }
+        }
+    }
+}
+
+ion-button {
+    --background: #24B0BA;
+    --background-activated: #1e969a;
+    --background-hover: #1e969a;
+    --color: white;
+    margin-top: 20px;
+}

@@ -21,6 +21,5 @@ export class CartPage implements OnInit {
   }
 
   getTotalPrice() {
-    return this.cartProducts.reduce((acc, product) => acc + product.price, 0);
-  }
+    return parseFloat(this.cartProducts.reduce((acc, product) => acc + product.price, 0).toFixed(2));  }
 }

@@ -8,12 +8,6 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Cart</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
     <div *ngFor="let product of cartProducts" class="product-card">
       <img [src]="product.image" alt="{{product.title}}" class="product-image">
@@ -25,6 +19,6 @@
       <h2>Totaal: €{{ getTotalPrice() }}</h2>
     </div>
 
-    <button ion-button [routerLink]="['/order']" class="place-order-button">Place Order!</button>
+    <button [routerLink]="['/order']" class="place-order-button">Place Order!</button>
   </div>
 </ion-content>

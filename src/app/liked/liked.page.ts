@@ -19,4 +19,9 @@ export class LikedPage implements OnInit {
   loadLikedProducts() {
     this.likedProducts = this.productService.getLikedProducts();
   }
+
+  addToCart(product: any) {
+    this.productService.addToCart(product);
+    console.log('Product added to cart:', product);
+  }
 }
