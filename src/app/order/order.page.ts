@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { Toast } from '@capacitor/toast';
+
 
 @Component({
   selector: 'app-order',
@@ -16,5 +18,14 @@ export class OrderPage implements OnInit {
 
   ngOnInit() {
   }
+
+
+  showOrderConfirmation = async () => {
+    await Toast.show({
+      text: 'Order placed successfully!',
+      duration: 'long',
+    });
+  };
+
 
 }

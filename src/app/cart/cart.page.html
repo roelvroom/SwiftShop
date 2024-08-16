@@ -13,12 +13,14 @@
       <img [src]="product.image" alt="{{product.title}}" class="product-image">
       <h3 class="product-title">{{product.title}}</h3>
       <p class="product-price">€{{product.price}}</p>
+      <button (click)="removeProductFromCart(product.id)">Remove item</button>
     </div>
 
     <div class="total-price">
       <h2>Totaal: €{{ getTotalPrice() }}</h2>
+
     </div>
 
-    <button [routerLink]="['/order']" class="place-order-button">Place Order!</button>
+    <button class="place-order-button" (click)="checkCartBeforeCheckout()">Place Order!</button>
   </div>
 </ion-content>

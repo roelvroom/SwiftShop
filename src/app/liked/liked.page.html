@@ -18,8 +18,10 @@
       <div class="card">
         <h2 class="product-title">{{product.title}}</h2>
         <p class="product-price">€{{product.price}}</p>
-        <button (click)="addToCart(product)" class="cart-button" >Add to cart</button>
-        <button routerLink="/products" class="sticky-button" >Products</button>
+        <button (click)="showEditOptions(product)" class="cart-button" >Actions</button>
+
+        <!-- <button (click)="addToCart(product)" class="cart-button" >Add to cart</button> -->
+        <button routerLink="/products" class="sticky-button">Products</button>
       </div>
     </div>
   </div>

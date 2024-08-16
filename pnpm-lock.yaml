@@ -29,12 +29,18 @@ dependencies:
   '@angular/router':
     specifier: ^18.0.0
     version: 18.1.2(@angular/common@18.1.2)(@angular/core@18.1.2)(@angular/platform-browser@18.1.2)(rxjs@7.8.1)
+  '@capacitor/action-sheet':
+    specifier: ^6.0.2
+    version: 6.0.2(@capacitor/core@6.1.1)
   '@capacitor/app':
     specifier: 6.0.0
     version: 6.0.0(@capacitor/core@6.1.1)
   '@capacitor/core':
     specifier: 6.1.1
     version: 6.1.1
+  '@capacitor/dialog':
+    specifier: ^6.0.1
+    version: 6.0.1(@capacitor/core@6.1.1)
   '@capacitor/haptics':
     specifier: 6.0.0
     version: 6.0.0(@capacitor/core@6.1.1)
@@ -44,6 +50,9 @@ dependencies:
   '@capacitor/status-bar':
     specifier: 6.0.0
     version: 6.0.0(@capacitor/core@6.1.1)
+  '@capacitor/toast':
+    specifier: ^6.0.2
+    version: 6.0.2(@capacitor/core@6.1.1)
   '@ionic/angular':
     specifier: ^8.0.0
     version: 8.2.6(@angular/core@18.1.2)(@angular/forms@18.1.2)(@angular/router@18.1.2)(rxjs@7.8.1)(zone.js@0.14.8)
@@ -1996,6 +2005,14 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
+  /@capacitor/action-sheet@6.0.2(@capacitor/core@6.1.1):
+    resolution: {integrity: sha512-33bhHfznQHmwZfyYBImIM82L88acQLTI9NE6ImjXQRuFUNK0tpPUsvisKJAzsYbT4IaLViSdfwEvMuEc5vTHdQ==}
+    peerDependencies:
+      '@capacitor/core': ^6.0.0
+    dependencies:
+      '@capacitor/core': 6.1.1
+    dev: false
+
   /@capacitor/app@6.0.0(@capacitor/core@6.1.1):
     resolution: {integrity: sha512-X5UGd90Jh5p9rmoPyMqFyFWqOypdJgVJhYcM5X1YyDVJJGzmJ5MuYv1+ajj5DW9Qyh+5a3th9WYptdGby8jidA==}
     peerDependencies:
@@ -2037,6 +2054,14 @@ packages:
       tslib: 2.6.3
     dev: false
 
+  /@capacitor/dialog@6.0.1(@capacitor/core@6.1.1):
+    resolution: {integrity: sha512-VyfWy4yPlFnmLFockS3HxoQL2LbWHVBC7DeuWpHVIuCUccXh46FzpVfhA9KQwsA/AM5q8gk80Z/im3Py6deMDA==}
+    peerDependencies:
+      '@capacitor/core': ^6.0.0
+    dependencies:
+      '@capacitor/core': 6.1.1
+    dev: false
+
   /@capacitor/haptics@6.0.0(@capacitor/core@6.1.1):
     resolution: {integrity: sha512-z2TmB+pTbd98Il2I1xpZGClCFwORxxP2m9f1a0rh70c2ubj2atVyZctgxrx1fuoExZTNGSxHaylWfrmjmtelVg==}
     peerDependencies:
@@ -2055,6 +2080,14 @@ packages:
 
   /@capacitor/status-bar@6.0.0(@capacitor/core@6.1.1):
     resolution: {integrity: sha512-Wo0ILugYlmENegKDgTzVCPjbvP8h1ObgHslLdgeVG643ViMS/diausHIq8e104WIKCXtKIELmQeYVp9mX7932g==}
+    peerDependencies:
+      '@capacitor/core': ^6.0.0
+    dependencies:
+      '@capacitor/core': 6.1.1
+    dev: false
+
+  /@capacitor/toast@6.0.2(@capacitor/core@6.1.1):
+    resolution: {integrity: sha512-kw9a4jSbP278xSB7cfXzafkRG0wIjsQ+rv+alzmrQa9IQsVwA5c3BvY3g+O/iE0uDGr7s11ZJNszUm1GkzJKyQ==}
     peerDependencies:
       '@capacitor/core': ^6.0.0
     dependencies:
