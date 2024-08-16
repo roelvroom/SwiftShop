@@ -8,20 +8,19 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Detail</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
   <div id="container">
-    <!-- Toon productdetails -->
-    <div *ngIf="product">
-      <img [src]="product.image" alt="Product afbeelding">
-      <h2>{{ product.name }}</h2>
+    <img [src]="product.image" alt="Product afbeelding">
+    <div *ngIf="product" class="product">
+      <h2>{{ product.title }}</h2>
       <p>{{ product.description }}</p>
-      <p>Prijs: {{ product.price | currency }}</p>
-      <!-- Voeg meer velden toe zoals nodig -->
+      <p class="Price">Prijs: {{ product.price | currency }}</p>
+      <button fill="outline" (click)="addToCart(product)">Winkelwagen</button>
     </div>
     <div *ngIf="!product">
       <strong>Geen productgegevens gevonden.</strong>

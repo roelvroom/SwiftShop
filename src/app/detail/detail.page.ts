@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ProductManagementService } from '../product-management-service.service';
 
 @Component({
   selector: 'app-detail',
@@ -9,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class DetailPage implements OnInit {
   product: any;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, private productService: ProductManagementService) { }
 
   ngOnInit() {
     const currentNavigation = this.router.getCurrentNavigation();
@@ -20,6 +21,10 @@ export class DetailPage implements OnInit {
     if (!this.product) {
       console.error('Productdata niet gevonden, navigeer terug naar productenlijst.');
       this.router.navigate(['/']);
-    }
+    }   
+  }
+  addToCart(product: any) {
+    this.productService.addToCart(product);
+    console.log('Product added to cart:', product);
   }
 }

@@ -9,51 +9,51 @@
             --background: black;
         }
 
-        .product-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin-bottom: 20px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            max-width: 60%; // Maximale breedte instellen
-            width: auto; // Zorgt ervoor dat de breedte zich aanpast aan de inhoud tot de maximale breedte
+        // .product-card {
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     text-align: center;
+        //     margin-bottom: 20px;
+        //     padding: 10px;
+        //     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        //     border-radius: 8px;
+        //     max-width: 60%; 
+        //     width: auto; 
 
-            img {
-                max-width: 100%;
-                height: auto;
-                margin-bottom: 10px; // Ruimte tussen de afbeelding en de tekst
-            }
+        //     img {
+        //         max-width: 100%;
+        //         height: auto;
+        //         margin-bottom: 10px; 
+        //     }
 
-            .product-info {
-                margin-bottom: 10px; // Ruimte tussen de tekst en de knoppen
-            }
+        //     .product-info {
+        //         margin-bottom: 10px; 
+        //     }
 
-            .product-buttons {
-                display: flex;
-                justify-content: center;
-                gap: 10px; // Ruimte tussen de knoppen
+        //     .product-buttons {
+        //         display: flex;
+        //         justify-content: center;
+        //         gap: 10px; 
 
-                button {
-                    padding: 10px 20px;
-                    border: none;
-                    border-radius: 4px;
-                    background-color: #007bff;
-                    color: white;
-                    text-transform: uppercase;
-                    font-size: 14px;
-                    cursor: pointer;
-                }
-            }
-        }
+        //         button {
+        //             padding: 10px 20px;
+        //             border: none;
+        //             border-radius: 4px;
+        //             background-color: #24B0BA;
+        //             color: white;
+        //             text-transform: uppercase;
+        //             font-size: 14px;
+        //         }
+        //     }
+        // }
 
-        // Media query voor kleine schermen (mobiele apparaten)
-        @media (max-width: 600px) {
-            .product-card {
-                max-width: 100%; // Laat de kaarten de volledige breedte innemen op kleine schermen
-            }
+        button{
+            border: #24B0BA solid 1px;
+            background-color: transparent;
+            padding: 0.6rem;
+            border-radius: 0.7rem;
+            color: white;
         }
     }
 
@@ -72,9 +72,4 @@
 
     ion-searchbar {
         margin-bottom: 20px;
-    }
-
-    @media (max-width: 768px) {
-        // Aanpassingen voor mobiele apparaten kunnen hier worden toegevoegd
-        // Bijvoorbeeld, het verkleinen van marges, padding, of het aanpassen van tekstgroottes
     }
