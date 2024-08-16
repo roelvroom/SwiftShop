@@ -8,18 +8,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Liked</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
     <div *ngFor="let product of likedProducts" class="product-card">
-      <img [src]="product.image" alt="{{product.title}}" class="product-image">
-      <h3 class="product-title">{{product.title}}</h3>
-      <p class="product-price">€{{product.price}}</p>
-      <!-- <button (click)="removeFromLiked(product)">Unlike</button> -->
+      <img
+        [src]="product.image"
+        alt="{{product.title}}"
+        class="product-image"
+      />
+      <div class="card">
+        <h2 class="product-title">{{product.title}}</h2>
+        <p class="product-price">€{{product.price}}</p>
+        <button routerLink="/products" class="sticky-button" >Products</button>
+      </div>
     </div>
   </div>
 </ion-content>
