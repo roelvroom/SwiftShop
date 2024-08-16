@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "731676948410",
+    "project_id": "swiftshop-37231",
+    "storage_bucket": "swiftshop-37231.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731676948410:android:c3476e78a94ee675238f83",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731676948410-l6iv7r03t1bjs3urko288hcqgr78nq3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.ionic.starter",
+            "certificate_hash": "215b67774aa454edd4e5739027a36a34c41a6a42"
+          }
+        },
+        {
+          "client_id": "731676948410-eko9kn0vb4ic5dqc2ksd4d3hocgbm3pk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPbXraZRr35um8gxaLfaowoEktx2z1TZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731676948410-eko9kn0vb4ic5dqc2ksd4d3hocgbm3pk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
