@@ -8,11 +8,11 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Products</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
   <div id="container">
     <input
@@ -21,10 +21,8 @@
       (input)="searchProducts()"
       placeholder="Zoek producten"
     />
-    <!-- Knop toevoegen om de zoekfunctie te activeren -->
     <button (click)="searchProducts()">Zoek</button>
     <div class="products-container">
-      <!-- Verwijder de dubbele *ngFor loop voor 'products' -->
     </div>
     <div *ngFor="let product of filteredProducts" class="product-card">
       <img [src]="product.image" alt="{{product.title}}" class="product-image">
